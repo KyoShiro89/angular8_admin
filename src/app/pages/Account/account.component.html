@@ -1,0 +1,35 @@
+
+<div class=" content">
+  <div class=" row">
+    <div class=" col-md-12">
+      <div class=" card">
+        <div class=" card-header">
+          <h4 class=" card-title">Account Management</h4>
+        </div>
+        <div class=" card-body">
+          <div class=" table-responsive">
+            <table class=" table tablesorter" id="">
+              <thead class=" text-primary">
+                <tr>
+                  <th>AccountID</th>
+                  <th>Username</th>
+                  <th>Fullname</th>
+                  <th class=" text-center">RoleType</th>
+                </tr>
+              </thead>
+              <tbody *ngFor="let account of accountList">
+                <tr>
+                  <td>{{account.AccountID}}</td>
+                  <td>{{account.Username}}</td>
+                  <td>{{account.Fullname}}</td>
+                  <td class=" text-center">{{account.RoleType}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+</div>
